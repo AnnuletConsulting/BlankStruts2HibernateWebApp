@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN" "http://getahead.org/dwr/dwr30.dtd">
+
+<dwr>
+  <allow>
+    <create creator="new">
+      <param name="class" value="com.annuletconsulting.dwr.Ajax"/>
+    </create>
+  </allow>
+
+  <allow>
+     <create creator="new" javascript="validator" class="org.apache.struts2.validators.DWRValidator"/>
+     <convert converter="bean" match="com.opensymphony.xwork2.ValidationAwareSupport"/>
+   </allow>
+   
+  <allow>
+  	<create creator="struts" javascript="ScriptName">
+    	<param name="formBean" value="formBeanName"/>
+  	</create>
+  </allow>
+</dwr>
