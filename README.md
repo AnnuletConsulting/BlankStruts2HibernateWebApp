@@ -10,13 +10,22 @@ site quickly, without dealing the library conflicts getting all the tools to wor
 
 First create a USER table in MySQL in the WEBAPP schema.
 +----------+-------------+------+-----+---------+----------------+
+
 | Field    | Type        | Null | Key | Default | Extra          |
+
 +----------+-------------+------+-----+---------+----------------+
+
 | ID       | int(11)     | NO   | PRI | NULL    | auto_increment |
+
 | USERNAME | varchar(32) | NO   | UNI | NULL    |                |
+
 | NAME     | varchar(64) | NO   |     | NULL    |                |
+
 | PASSWORD | varchar(64) | NO   |     | NULL    |                |
+
 +----------+-------------+------+-----+---------+----------------+
+
+
 
 Then create a user and password and grant SELECT, INSERT, UPDATE, DELETE to the WEBAPP
 schema for that user.
