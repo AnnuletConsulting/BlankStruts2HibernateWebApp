@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.springsource.restbucks</groupId>
-	<artifactId>restbucks</artifactId>
+	<groupId>com.annuletconsulting</groupId>
+	<artifactId>demoblog</artifactId>
 	<packaging>war</packaging>
 	<version>1.0.0.BUILD-SNAPSHOT</version>
-	<name>Spring RESTBucks</name>
+	<name>Demo Blog</name>
 
 	<properties>
 	    <dwr.version>3.0.M1</dwr.version>
@@ -258,15 +258,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 
 		<!-- Web -->
 
-		<!--  
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>3.0.1</version>
-			<scope>provided</scope>
-		</dependency>
-		-->
-
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -304,6 +295,18 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 			<version>5.1.25</version>
 		</dependency>
 		
+		<!-- JSTL -->
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.8</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -341,12 +344,5 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 			</plugin>
 		</plugins>
 	</build>
-
-	<repositories>
-		<repository>
-			<id>spring-snapshots</id>
-			<url>http://repo.springsource.org/libs-snapshot</url>
-		</repository>
-	</repositories>
 
 </project>
